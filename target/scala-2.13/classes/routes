@@ -1,0 +1,33 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET     /                           controllers.VisitorController.index
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+#VisitorController
+GET /visitor                        controllers.VisitorController.index
+GET /login							controllers.VisitorController.login
+POST /login							controllers.VisitorController.validateLogin
+GET /logout							controllers.VisitorController.logout
+GET /visitor/create                 controllers.VisitorController.create()
+GET /visitor/:id                    controllers.VisitorController.show(id: Integer)
+GET /visitor/edit/:id               controllers.VisitorController.edit(id: Integer)
+POST /visitor/edit                  controllers.VisitorController.update()
+POST /visitor/create                controllers.VisitorController.save()
+GET /visitor/delete/:id             controllers.VisitorController.destroy(id: Integer)
+
+#QueueController
+GET /queue                          controllers.QueueController.index
+GET /queue/create                   controllers.QueueController.create
++ nocsrf
+POST /queue/create					controllers.QueueController.save
+GET /queue/destroy/:id				controllers.QueueController.destroy(id: Int)
+GET /queue/show/:id					controllers.QueueController.show(id: Int)
++ nocsrf
+POST /queue/join  					controllers.VisitorController.joinQueue
+

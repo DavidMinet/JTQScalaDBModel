@@ -1,0 +1,11 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\dminetca\Desktop\play-scala-anorm-example\app\controllers\VisitorController.scala:51:33: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : play.api.data.Form[utils.CreateData][0m
+[0m[[0m[31merror[0m] [0m[0m required: play.api.data.Form[controllers.CreateData][0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.visitorcreate(createForm)) //TODO Intellij not support play templates[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\dminetca\Desktop\play-scala-anorm-example\app\controllers\VisitorController.scala:56:61: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : play.api.data.Form[utils.CreateData][0m
+[0m[[0m[31merror[0m] [0m[0m required: play.api.data.Form[controllers.CreateData][0m
+[0m[[0m[31merror[0m] [0m[0m      formWithErrors => BadRequest(views.html.visitorcreate(formWithErrors)),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
